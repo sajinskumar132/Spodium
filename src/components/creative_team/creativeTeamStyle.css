@@ -1,0 +1,26 @@
+.creative_team_main_text{
+    margin-top: 60px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 47px;
+    text-align: center;
+}
+.creative_team_main_description_container{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+}
+.creative_team_main_description{
+    width: 600px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+.creative_team_profile_container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
