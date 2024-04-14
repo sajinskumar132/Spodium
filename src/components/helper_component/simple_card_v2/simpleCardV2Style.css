@@ -37,3 +37,32 @@
     line-height: 24px;
     color: rgba(108, 108, 114, 1);
 }
+.Socimedia_list{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.Socimedia_sublist_item{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.linkedin_style{
+    color: rgba(26, 114, 222, 1);
+    font-size: 25px;
+    cursor: pointer;
+}
+.github_style{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.portfolio_style{
+    font-size: 25px;
+    cursor: pointer;
+}
+.divideline_style{
+    font-size: 30px;
+}

@@ -24,6 +24,20 @@ function CreativeTeam() {
           about={
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae."
           }
+          socialMedia={[
+            {
+              platform:"portfolio",
+              url:"https://sajinskumar-portfolio.web.app/"
+            },
+            {
+              platform:"linkedIn",
+              url:"https://www.linkedin.com/in/sajin-s-kumar-90b26720a"
+            },
+            {
+              platform:"gitHub",
+              url:"https://github.com/sajinskumar132"
+            }
+          ]}
         />
           <SimpleCardV2
           image={Sajin_profile}
@@ -32,6 +46,12 @@ function CreativeTeam() {
           about={
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae."
           }
+          socialMedia={[
+            {
+              platform:"linkedIn",
+              url:null
+            }
+          ]}
         />
         <SimpleCardV2
           image={Sajin_profile}
@@ -40,6 +60,12 @@ function CreativeTeam() {
           about={
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae."
           }
+          socialMedia={[
+            {
+              platform:"linkedIn",
+              url:null
+            }
+          ]}
         />
       </div>
     </div>
