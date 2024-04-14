@@ -1,0 +1,26 @@
+.Store_main_container{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:150px
+}
+.Store_main_text{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 55px;
+}
+.Store_main_description{
+    max-width: 600px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(108, 108, 114, 1);
+}
+.Store_main_store_container{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
