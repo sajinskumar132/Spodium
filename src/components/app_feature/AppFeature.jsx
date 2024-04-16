@@ -11,7 +11,7 @@ import cell_phone from "../../assets/images/cell-phone.png"
 import male_telemarketer from '../../assets/images/male-telemarketer.png'
 function AppFeature() {
   return (
-    <div className="app_featur_main_container">
+    <div id="feature" className="app_featur_main_container">
       <div className="app_featur_main_image_container">
         <img
           src={App_feature_backgroundImage}

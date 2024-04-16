@@ -4,7 +4,7 @@ import Sajin_profile from "../../assets/images/Sajin_profile.png";
 import './creativeTeamStyle.css'
 function CreativeTeam() {
   return (
-    <div>
+    <div id="team">
       <p className="creative_team_main_text">Our Creative Team</p>
       <div className="creative_team_main_description_container">
       <p className="creative_team_main_description">

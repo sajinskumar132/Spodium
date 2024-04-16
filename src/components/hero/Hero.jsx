@@ -9,7 +9,7 @@ import MobileScreenNotch from '../../assets/images/mobile_screen_noch.png'
 import LogoWithWhiteText from '../../assets/images/logoWithTextWhite.png'
 function Hero() {
   return (
-    <div className='main_hero_container'>
+    <div id='home' className='main_hero_container'>
         <div className='main_hero_image_container'>
             <img src={BackgroundImage} className='main_hero_image'/>
         </div>

@@ -1,23 +1,135 @@
+.hero_sticky_header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 .hero_main_header{
-    width: 100vw;
-    padding: 10px 0px;
+    position: relative;
+    padding: 10px 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     max-width: 100%;
+}
+.mobile_menu{
+    display: none;
+    font-size: 30px;
+}
+.drawer_menu_item_mobile{
+    display: none;
+    position: fixed; /* Change to fixed */
+    top: 0; /* Place at the top of the viewport */
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 9999;
+    background-color: #8c8c8c82;
+    
+}
+.drawer_menu_items_container{
+    width: 300px;
+    height: 100vh;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+}
+.drawer_menu_items_container_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
 }
 .hero_sub_menu_main_container{
     display: flex;
     align-items: center;
     gap: 15px;
 }
-
+.drawer_close_button{
+    font-size: 25px;
+}
 .download_button{
-    background-color: #6C6C72;
-    padding: 15px 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    background-image: linear-gradient(to right, #8b41ff, #7f3ee9, #427bff, #278eff, #2f9dff);
     color: white;
     border-radius: 5px;
     font-weight: 600;
-    line-height: 13px;
+    font-size: 16px;
+    padding-top: 2px;
+    height: 35px;
+    width: 150px;
+}
+.drawer_menu_item_list_container{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 10px;
+}
+.notSelectedMenu_header{
+    color: black;
+    font-size: 18px;
+    font-family: 600;
+    text-decoration: none;
+
+}
+.selectedMenu_header{
+    color: #5956E9;
+    border-bottom: 1px solid #5956E9;
+    font-size: 18px;
+    font-family: 600;
+    text-decoration: none;
+
+}
+.selectedMenu_drawer{
+    color: #5956E9;
+    font-size: 18px;
+    font-family: 600;
+    text-decoration: none;
+
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+   
+}
+@media only screen and (max-width: 750px) {
+    .hero_sub_menu_main_container{
+        display: none;
+    }
+    .mobile_menu{
+        display: block;
+    }
+    .download_button{
+        height: 35px;
+        width: 115px;
+        font-size: 14px;
+    }
+    .hero_logo_with_text_image{
+        width: 110px;
+    }
+.hero_main_header{
+    padding: 10px 10px;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 
 }

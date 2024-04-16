@@ -4,7 +4,7 @@ import './aboutAppStyle.css'
 import AboutAppImage from '../../assets/images/about_app_image.png'
 function AboutApp() {
   return (
-    <div className="about_app_main_container">
+    <div id="about" className="about_app_main_container">
       <h1  className="about_app_main_header">About Our App</h1>
       <div className="about_app_sub_text_container" >
         <p className="about_app_main_sub_text">
