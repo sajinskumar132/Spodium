@@ -63,6 +63,56 @@
     font-size: 25px;
     cursor: pointer;
 }
+.dribble_style{
+    font-size: 20px;
+    cursor: pointer;
+}
+.behance_style{
+    font-size: 25px;
+    cursor: pointer;
+}
 .divideline_style{
     font-size: 30px;
+}
+
+@media only screen and (max-width: 739px) {
+    .simplecard_profile_border{
+        width: 150px;
+        height: 150px;
+    }
+    .simplecard_profile_image{
+        width: 140px;
+        height: 140px;
+        top: 5px;
+    }
+    .simplecard_mainContainer{
+        padding: 20px;
+        width: 300px;
+    }
+    .simplecard_name{
+        font-size: 25px;
+    }
+    .simplecard_designation{
+        font-size: 18px;
+    }
+    .simplecard_about{
+        font-size: 14px;
+    }
+    .github_style{
+        font-size: 22px;
+        cursor: pointer;
+    }
+    
+    .portfolio_style{
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .dribble_style{
+        font-size: 17px;
+        cursor: pointer;
+    }
+    .behance_style{
+        font-size: 22px;
+        cursor: pointer;
+    }
 }

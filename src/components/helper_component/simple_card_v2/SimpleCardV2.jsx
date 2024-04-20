@@ -5,11 +5,14 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { BsFileEarmarkPersonFill } from "react-icons/bs";
 import { TbMinusVertical } from "react-icons/tb";
+import { BiWorld } from "react-icons/bi";
+import { BsDribbble } from "react-icons/bs";
+import { FaBehanceSquare } from "react-icons/fa";
 function SimpleCardV2({ image, name, designation, about, socialMedia }) {
   return (
     <div className="simplecard_mainContainer">
       <div className="simplecard_image_mainContainer">
-        <img src={circle_border} />
+        <img src={circle_border} className="simplecard_profile_border"/>
         <img src={image} className="simplecard_profile_image" />
       </div>
       <p className="simplecard_name">{name}</p>
@@ -30,7 +33,11 @@ function SimpleCardV2({ image, name, designation, about, socialMedia }) {
                 ) : item.platform === "gitHub" ? (
                   <FaGithub className="github_style" />
                 ) : item.platform === "portfolio" ? (
-                  <BsFileEarmarkPersonFill  className="portfolio_style"/>
+                  <BiWorld  className="portfolio_style"/>
+                ) : item.platform === "dribble" ? (
+                  <BsDribbble  className="dribble_style"/>
+                ) : item.platform === "behance" ? (
+                  <FaBehanceSquare  className="behance_style"/>
                 ) : (
                   <></>
                 )}

@@ -24,7 +24,7 @@ function Hero() {
                 </div>
             </div>
             <div>
-                <div style={{'position':'relative'}}> 
+                <div className='mobile_screen' style={{'position':'relative'}}> 
                     <div className='hero_mobile_screen_container'>
                     <img src={MobileBody} className='hero_mobile_screen'/>
                     </div>

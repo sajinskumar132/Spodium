@@ -22,5 +22,27 @@
     margin-top: 50px;
     display: flex;
     justify-content: center;
-    gap: 50px;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+@media only screen and (max-width: 739px) {
+    .creative_team_main_text{
+        font-size: 25px;
+    }
+    .creative_team_main_description_container{
+        margin: 20px 0px;
+        display: flex;
+        justify-content: center;
+    }
+    .creative_team_main_description{
+        font-size: 15px;
+    }
+    .creative_team_profile_container{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
 }

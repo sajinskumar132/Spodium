@@ -1,8 +1,10 @@
 .Store_main_container{
+    padding: 0px 20px;
     margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap:150px
 }
 .Store_main_text{
@@ -23,4 +25,37 @@
     display: flex;
     align-items: center;
     gap: 40px;
+}
+
+@media only screen and (max-width: 1460px) {
+    .Store_main_container {
+        gap: 100px;
+    }
+    .Store_main_store_container{
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 1290px) {
+    .Store_main_container {
+        gap: 50px;
+    }
+}
+
+@media only screen and (max-width: 739px) {
+    .Store_main_container{
+        margin-top: 50px;
+    }
+    .spodium_image_store{
+        width: 350px;
+        height: 350px;
+    }
+    .Store_main_text{
+        font-size: 25px;
+    }
+    .Store_main_description{
+        font-size: 15px;
+    }
+    .Store_main_store_container{
+        margin-top: 20px;
+    }
 }

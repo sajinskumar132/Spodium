@@ -17,7 +17,7 @@ function Store() {
                 </div>
         </div>
         <div>
-            <img src={spodium_store_image}/>
+            <img src={spodium_store_image} className='spodium_image_store'/>
         </div>
     </div>
   )
