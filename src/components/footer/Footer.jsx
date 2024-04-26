@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logoWithText from '../../assets/images/logoWithText.png'
 import './footerStyle.css'
 import { IoSend } from "react-icons/io5";
+import { axiosClient } from '../../apis/axiosConnection';
 function Footer() {
+  const [email,setEmail]=useState('')
+  const Subscribe=async (email)=>{
+    await axiosClient.post('/spodium_support/create_subscribtion',{email}).then((response)=>{
+      setEmail('')
+      window.alert(response.data.message);
+    }).catch((error)=>{
+      setEmail('')
+      window.alert(error.response.data.message);
+    })
+  }
   return (
     <div className='footer_super_container'>
        <div className='footer_main_container'>
@@ -20,8 +31,8 @@ function Footer() {
             <p  className='footer_main_header2'>News Letter</p>
             <p  className="footer_main_description2">Subscribe our newsletter to get our latest update & news</p>
             <div className="footer_main_input_container" >
-                <input placeholder='Your email address' className='footer_input_field'/>
-                <div className='footer_main_input_send'>
+                <input placeholder='Your email address' className='footer_input_field' value={email} onChange={(e)=>{setEmail(e.target.value)}}/>
+                <div className='footer_main_input_send' onClick={()=>{Subscribe(email)}}>
                   <IoSend className='footer_main_input_send_icon'/>
                 </div>
             </div>
